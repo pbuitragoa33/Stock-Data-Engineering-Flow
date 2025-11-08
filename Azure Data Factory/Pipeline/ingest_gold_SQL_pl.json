@@ -1,0 +1,62 @@
+{
+    "name": "ingest_gold_SQL_pl",
+    "properties": {
+        "activities": [
+            {
+                "name": "ForEach_Ingest",
+                "type": "ForEach",
+                "dependsOn": [],
+                "userProperties": [],
+                "typeProperties": {
+                    "items": {
+                        "value": "@createArray('NVDA', 'META', 'AMZN', 'PANW', 'ORCL', 'AMD', 'GOOG', 'MSFT', 'AVGO')",
+                        "type": "Expression"
+                    },
+                    "isSequential": true,
+                    "activities": [
+                        {
+                            "name": "Copy data",
+                            "type": "Copy",
+                            "dependsOn": [],
+                            "policy": {
+                                "timeout": "0.12:00:00",
+                                "retry": 0,
+                                "retryIntervalInSeconds": 30,
+                                "secureOutput": false,
+                                "secureInput": false
+                            },
+                            "userProperties": [],
+                            "typeProperties": {
+                                "source": {
+                                    "type": "DelimitedTextSource",
+                                    "storeSettings": {
+                                        "type": "AzureBlobFSReadSettings",
+                                        "recursive": true,
+                                        "enablePartitionDiscovery": false
+                                    },
+                                    "formatSettings": {
+                                        "type": "DelimitedTextReadSettings"
+                                    }
+                                },
+                                "enableStaging": false
+                            },
+                            "inputs": [
+                                {
+                                    "referenceName": "dynamic_dataset_gold",
+                                    "type": "DatasetReference",
+                                    "parameters": {
+                                        "Folder_Name": {
+                                            "value": "@item()",
+                                            "type": "Expression"
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ],
+        "annotations": []
+    }
+}
