@@ -3,9 +3,6 @@
 # ----------------------------------------------------------------------------------------------------------------------------
 
 
-from pyspark.sql import SparkSession
-from pyspark.sql.window import Window
-from pyspark.sql import functions as F
 import os
 from dotenv import load_dotenv
 
@@ -13,6 +10,10 @@ from dotenv import load_dotenv
 
 spark = SparkSession.builder.appName("EjemploPySpark").getOrCreate()
 
+
+from pyspark.sql import SparkSession
+from pyspark.sql.window import Window
+from pyspark.sql import functions as F
 
 # Load environment variables
 
