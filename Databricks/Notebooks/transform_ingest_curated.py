@@ -60,9 +60,10 @@ display(df_bronze)
 
 # For this analysis, the Close price is the most relevant information. Let's keep only the Close price
 
-# Close columns 
+# Final columns 
 
-close_columns = [
+final_columns = [
+    "Ticker",
     "NVDA4",
     "META9",
     "AMZN14",
@@ -74,7 +75,7 @@ close_columns = [
     "AVGO44"
 ]
 
-df_close = df_bronze.select(*close_columns)
+df_close = df_bronze.select(*final_columns)
 
 display(df_close)
 
@@ -82,14 +83,15 @@ display(df_close)
 
 # Rename columns
 
-df_close = df_close.withColumnRenamed("AMD29", "AMD").withColumnRenamed("NVDA4", "NVDA").withColumnRenamed("META9", "META").withColumnRenamed("AMZN14", "AMZN").withColumnRenamed("PANW19", "PANW").withColumnRenamed("ORCL24", "ORCL").withColumnRenamed("GOOG34", "GOOG").withColumnRenamed("MSFT39", "MSFT").withColumnRenamed("AVGO44", "AVGO")
+df_close = df_close.withColumnRenamed("Ticker", "Date").withColumnRenamed("AMD29", "AMD").withColumnRenamed("NVDA4", "NVDA").withColumnRenamed("META9", "META").withColumnRenamed("AMZN14", "AMZN").withColumnRenamed("PANW19", "PANW").withColumnRenamed("ORCL24", "ORCL").withColumnRenamed("GOOG34", "GOOG").withColumnRenamed("MSFT39", "MSFT").withColumnRenamed("AVGO44", "AVGO")
 
 display(df_close)
 
 
 # Drop first 2 rows
 
-df_close = df_close.subtract(df_close.limit(2))
+
+df_close = df_close.offset(2)
 
 display(df_close)
 
