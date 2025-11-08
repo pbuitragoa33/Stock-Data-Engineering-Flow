@@ -1,0 +1,215 @@
+{
+    "name": "dynamic_dataset_gold",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "stock_datalake_ls",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "Folder_Name": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "DelimitedText",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileSystem": {
+                    "value": "@concat('gold/', dataset().Folder_Name, '_indicators')",
+                    "type": "Expression"
+                }
+            },
+            "columnDelimiter": ",",
+            "escapeChar": "\\",
+            "firstRowAsHeader": true,
+            "quoteChar": "\""
+        },
+        "schema": [
+            {
+                "name": "Ticker",
+                "type": "String"
+            },
+            {
+                "name": "NVDA1",
+                "type": "String"
+            },
+            {
+                "name": "NVDA2",
+                "type": "String"
+            },
+            {
+                "name": "NVDA3",
+                "type": "String"
+            },
+            {
+                "name": "NVDA4",
+                "type": "String"
+            },
+            {
+                "name": "NVDA5",
+                "type": "String"
+            },
+            {
+                "name": "META6",
+                "type": "String"
+            },
+            {
+                "name": "META7",
+                "type": "String"
+            },
+            {
+                "name": "META8",
+                "type": "String"
+            },
+            {
+                "name": "META9",
+                "type": "String"
+            },
+            {
+                "name": "META10",
+                "type": "String"
+            },
+            {
+                "name": "AMZN11",
+                "type": "String"
+            },
+            {
+                "name": "AMZN12",
+                "type": "String"
+            },
+            {
+                "name": "AMZN13",
+                "type": "String"
+            },
+            {
+                "name": "AMZN14",
+                "type": "String"
+            },
+            {
+                "name": "AMZN15",
+                "type": "String"
+            },
+            {
+                "name": "PANW16",
+                "type": "String"
+            },
+            {
+                "name": "PANW17",
+                "type": "String"
+            },
+            {
+                "name": "PANW18",
+                "type": "String"
+            },
+            {
+                "name": "PANW19",
+                "type": "String"
+            },
+            {
+                "name": "PANW20",
+                "type": "String"
+            },
+            {
+                "name": "ORCL21",
+                "type": "String"
+            },
+            {
+                "name": "ORCL22",
+                "type": "String"
+            },
+            {
+                "name": "ORCL23",
+                "type": "String"
+            },
+            {
+                "name": "ORCL24",
+                "type": "String"
+            },
+            {
+                "name": "ORCL25",
+                "type": "String"
+            },
+            {
+                "name": "AMD26",
+                "type": "String"
+            },
+            {
+                "name": "AMD27",
+                "type": "String"
+            },
+            {
+                "name": "AMD28",
+                "type": "String"
+            },
+            {
+                "name": "AMD29",
+                "type": "String"
+            },
+            {
+                "name": "AMD30",
+                "type": "String"
+            },
+            {
+                "name": "GOOG31",
+                "type": "String"
+            },
+            {
+                "name": "GOOG32",
+                "type": "String"
+            },
+            {
+                "name": "GOOG33",
+                "type": "String"
+            },
+            {
+                "name": "GOOG34",
+                "type": "String"
+            },
+            {
+                "name": "GOOG35",
+                "type": "String"
+            },
+            {
+                "name": "MSFT36",
+                "type": "String"
+            },
+            {
+                "name": "MSFT37",
+                "type": "String"
+            },
+            {
+                "name": "MSFT38",
+                "type": "String"
+            },
+            {
+                "name": "MSFT39",
+                "type": "String"
+            },
+            {
+                "name": "MSFT40",
+                "type": "String"
+            },
+            {
+                "name": "AVGO41",
+                "type": "String"
+            },
+            {
+                "name": "AVGO42",
+                "type": "String"
+            },
+            {
+                "name": "AVGO43",
+                "type": "String"
+            },
+            {
+                "name": "AVGO44",
+                "type": "String"
+            },
+            {
+                "name": "AVGO45",
+                "type": "String"
+            }
+        ]
+    }
+}
