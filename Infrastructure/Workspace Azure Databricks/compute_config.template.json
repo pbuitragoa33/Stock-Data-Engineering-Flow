@@ -1,0 +1,11 @@
+{
+  "data_security_mode": "LEGACY_SINGLE_USER_STANDARD",
+  "single_user_name": "<YOUR_EMAIL@example.com>",
+  "cluster_name": "<CLUSTER_NAME>",
+  "kind": "CLASSIC_PREVIEW",
+  "runtime_engine": "STANDARD",
+  "spark_version": "<SPARK_VERSION>",
+  "node_type_id": "<NODE_TYPE_ID>",
+  "autotermination_minutes": 30,
+  "is_single_node": true
+}
