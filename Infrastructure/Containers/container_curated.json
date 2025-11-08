@@ -1,0 +1,8 @@
+{
+  "type": "Microsoft.Storage/storageAccounts/blobServices/containers",
+  "apiVersion": "2022-09-01",
+  "name": "projectdsfinancesa/default/curated",
+  "properties": {
+    "publicAccess": "None"
+  }
+}
