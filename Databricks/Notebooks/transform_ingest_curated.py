@@ -2,6 +2,7 @@
 # Script to transform and ingest data from Bronze to Silver layer in Azure Data Lake Storage Gen2 using Databricks and PySpark
 # ----------------------------------------------------------------------------------------------------------------------------
 
+
 from pyspark.sql import SparkSession
 import os
 from dotenv import load_dotenv
