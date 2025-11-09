@@ -1,0 +1,187 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "workspaceName": {
+            "value": "forecasting_stock_ml"
+        },
+        "friendlyName": {
+            "value": "forecasting_stock_ml"
+        },
+        "description": {
+            "value": ""
+        },
+        "kind": {
+            "value": "Default"
+        },
+        "location": {
+            "value": "eastus2"
+        },
+        "resourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "appInsightsLogWorkspaceName": {
+            "value": "forecastingsto1868284013"
+        },
+        "sku": {
+            "value": "Basic"
+        },
+        "identityType": {
+            "value": "systemAssigned"
+        },
+        "primaryUserAssignedIdentityResourceGroup": {
+            "value": "UPB-DS-404777"
+        },
+        "primaryUserAssignedIdentityName": {
+            "value": ""
+        },
+        "storageAccountOption": {
+            "value": "new"
+        },
+        "storageAccountName": {
+            "value": "forecastingsto3660500857"
+        },
+        "storageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "storageAccountBehindVNet": {
+            "value": "false"
+        },
+        "storageAccountResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "storageAccountLocation": {
+            "value": "eastus2"
+        },
+        "storageAccountHnsEnabled": {
+            "value": false
+        },
+        "enableServiceSideCMKEncryption": {
+            "value": false
+        },
+        "managedKeyVaultType": {
+            "value": "byoKeyVault"
+        },
+        "keyVaultOption": {
+            "value": "new"
+        },
+        "keyVaultName": {
+            "value": "forecastingsto9596000787"
+        },
+        "keyVaultBehindVNet": {
+            "value": "false"
+        },
+        "keyVaultResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "keyVaultLocation": {
+            "value": "eastus2"
+        },
+        "applicationInsightsOption": {
+            "value": "new"
+        },
+        "applicationInsightsName": {
+            "value": "forecastingsto9995480675"
+        },
+        "applicationInsightsResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "applicationInsightsLocation": {
+            "value": "eastus2"
+        },
+        "containerRegistryOption": {
+            "value": "none"
+        },
+        "containerRegistryName": {
+            "value": "crzqirgjlvlrj6k"
+        },
+        "containerRegistrySku": {
+            "value": "Standard"
+        },
+        "containerRegistryResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "containerRegistryBehindVNet": {
+            "value": "false"
+        },
+        "containerRegistryLocation": {
+            "value": "eastus2"
+        },
+        "vnetOption": {
+            "value": "none"
+        },
+        "vnetName": {
+            "value": "vnzqirgjlvlrj6k"
+        },
+        "vnetResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "delegateSubnetId": {
+            "value": "none"
+        },
+        "delegateSubnetName": {
+            "value": ""
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.0.0.0/16"
+            ]
+        },
+        "subnetOption": {
+            "value": "none"
+        },
+        "subnetName": {
+            "value": "snzqirgjlvlrj6k"
+        },
+        "subnetPrefix": {
+            "value": "10.0.0.0/24"
+        },
+        "adbWorkspace": {
+            "value": ""
+        },
+        "confidential_data": {
+            "value": "false"
+        },
+        "encryption_status": {
+            "value": "Disabled"
+        },
+        "cmk_keyvault": {
+            "value": ""
+        },
+        "resource_cmk_uri": {
+            "value": ""
+        },
+        "privateEndpointType": {
+            "value": "none"
+        },
+        "tagValues": {
+            "value": {}
+        },
+        "privateEndpointName": {
+            "value": "pe"
+        },
+        "privateEndpointResourceGroupName": {
+            "value": "UPB-DS-404777"
+        },
+        "privateEndpointSubscription": {
+            "value": "09a1312f-5cbd-4f0a-8983-bfdd0b1feeef"
+        },
+        "systemDatastoresAuthMode": {
+            "value": "accessKey"
+        },
+        "allowSharedKeyAccess": {
+            "value": "true"
+        },
+        "managedNetwork": {
+            "value": {
+                "isolationMode": "Disabled"
+            }
+        },
+        "provisionNetworkNow": {
+            "value": "false"
+        },
+        "publicNetworkAccess": {
+            "value": "Enabled"
+        }
+    }
+}
