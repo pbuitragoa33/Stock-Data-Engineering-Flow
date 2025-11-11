@@ -7,7 +7,7 @@ This project consist in the implementation of a full data flow (end to end) in t
 
 Here is a summary hand-writed by me for better understanding:
 
-![Visual Project Summary](Graphic Results/Visual_Summary_Project.png)
+![Visual Project Summary](./Graphic Results/Visual_Summary_Project.png)
 
 
 # **Project Milestones**
